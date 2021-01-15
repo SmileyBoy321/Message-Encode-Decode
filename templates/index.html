@@ -3,36 +3,39 @@
 
 <head>
     <title>Message Encode Decode</title>
+    <link type="text/css" rel="stylesheet" href="/static/styles.css">
 </head>
 
 <body>
-    <h1>Encrypt & Decrypt message</h1>
+    <div class="flex-container">
+        <h1>Encrypt & Decrypt message</h1>
+        <label for="Encrypt & Decrypt">Choose the encryption method</label>
+        <select name="Encrypt or Decrypt message" id="Encrypt & Decrypt">
+            <optgroup label="Encrypt methods">
+                <option label="Base64"></option>
+            </optgroup>
+            <optgroup label="Decrypt methods">
+                <option label="Base64"></option>
+            </optgroup>
+        </select>
+        <br><br>
 
-    <label for="Encrypt & Decrypt">Choose the encryption method:</label>
-    <select name="Encrypt or Decrypt message" id="Encrypt & Decrypt">
-        <optgroup label="Encrypt methods">
-            <option label="Base64"></option>
-        </optgroup>
-        <optgroup label="Decrypt methods">
-            <option label="Base64"></option>
-        </optgroup>
-    </select>
-    <br><br>
+        <div class="user_textarea_input">
+            <label for="user_message">Type your message</label>
+        </div>
 
-    <div class="user_textarea_input">
-        <label for="user_message">Type your message</label>
-    </div>
+        <div class="user_message">
+            <textarea id="user_message_input" name="Message to encrypt or decrypt" rows="4" cols="50" autofocus></textarea>
+        </div>
 
-    <div class="user_message">
-        <textarea id="user_message_input" name="Message to encrypt or decrypt" rows="4" cols="50"></textarea>
-    </div>
+        <div class="textarea_description">
+            <br><br>
+            <label for="Encrypt or Decrypt message">Message encrypted or decrypted</label>
+        </div>
 
-    <div class="textarea_description">
-        <label for="Encrypt or Decrypt message">Message encrypted or decrypted</label>
-    </div>
-
-    <div class="result">
-        <textarea id="result_of_message" name="Message encrypted or decrypted" rows="4" cols="50"></textarea>
+        <div class="result">
+            <textarea id="result_of_message" name="Message encrypted or decrypted" rows="4" cols="50"></textarea>
+        </div>
     </div>
 </body>
 

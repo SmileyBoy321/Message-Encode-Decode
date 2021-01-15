@@ -1,0 +1,42 @@
+body {
+    background-color: #263238; 
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container h1 {
+    font-size: 60px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.flex-container label {
+    color: #607D8B;
+}
+
+.flex-container select optgroup {
+    background: #607D8B;
+    color: lightblue;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.flex-container textarea {
+    resize: none;
+    color: lightgreen;
+    background-color: black;
+    border: none;
+	outline: none;
+}
+
+.flex-container textarea:focus {
+    box-shadow: 0 0 5px rgba(3, 155, 229, 1);
+}
