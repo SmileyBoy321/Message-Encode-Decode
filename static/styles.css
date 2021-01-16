@@ -18,7 +18,8 @@ body {
     align-items: center;
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 80%;
+    padding-bottom: 35rem;
     left: 0;
     top: 0;
     background: rgba(38, 50, 56, 0.9);
@@ -33,6 +34,7 @@ body {
 
 .flex-container label {
     color: #607D8B;
+    padding-bottom: 5px;
 }
 
 .flex-container select optgroup {
