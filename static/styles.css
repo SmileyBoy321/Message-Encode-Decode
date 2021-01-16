@@ -30,12 +30,13 @@ body {
 
 .flex-container h1 {
     font-size: 60px;
-    background: -webkit-linear-gradient(#eee, #333, #333);
+    background: -webkit-linear-gradient(#abbaab, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: -10px;
     margin-bottom: -10px;
     padding-bottom: 40px;
+    filter: drop-shadow(0 0 0.15rem green);
 }
 
 .flex-container label {
