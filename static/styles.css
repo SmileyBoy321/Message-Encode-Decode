@@ -4,6 +4,9 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
 body { 
@@ -34,7 +37,7 @@ body {
 
 .flex-container label {
     color: #607D8B;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
 
 .flex-container select optgroup {
@@ -42,6 +45,14 @@ body {
     color: lightblue;
     font-style: normal;
     font-size: 20px;
+}
+
+.flex-container select {
+    color: #607D8B;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .flex-container textarea {
