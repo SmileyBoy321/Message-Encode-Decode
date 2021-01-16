@@ -30,9 +30,12 @@ body {
 
 .flex-container h1 {
     font-size: 60px;
-    background: -webkit-linear-gradient(#eee, #333);
+    background: -webkit-linear-gradient(#eee, #333, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding-bottom: 40px;
 }
 
 .flex-container label {
@@ -44,7 +47,8 @@ body {
     background: #607D8B;
     color: lightblue;
     font-style: normal;
-    font-size: 20px;
+    font-weight: normal;
+    font-size: 15px;
 }
 
 .flex-container select {
@@ -53,8 +57,14 @@ body {
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 3px rgba(117, 117, 117, 1);
 }
 
+.flex-container select:focus {
+    box-shadow: 0 0 5px rgba(3, 155, 229, 1);
+}
 .flex-container textarea {
     resize: none;
     color: lightgreen;
