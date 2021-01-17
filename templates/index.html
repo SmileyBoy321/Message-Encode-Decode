@@ -3,6 +3,7 @@
 
 <head>
     <title>Message Encode Decode</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
     <link type="text/css" rel="stylesheet" href="../static/styles.css">
 </head>
 
@@ -11,10 +12,10 @@
         <h1>Encrypt & Decrypt message</h1>
         <label for="Encrypt & Decrypt">Choose the encryption method</label>
         <select name="Encrypt or Decrypt message" id="types">
-            <optgroup label="Encrypt methods">
+            <optgroup label="Encrypt methods" id="encrypt">
                 <option label="Base64"></option>
             </optgroup>
-            <optgroup label="Decrypt methods">
+            <optgroup label="Decrypt methods" id="decrypt">
                 <option label="Base64"></option>
             </optgroup>
         </select>
